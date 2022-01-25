@@ -2,26 +2,91 @@
 <html>
     <head>
         <title>Cats</title>
+        <style>
+            body {
+                padding-left: 30px;
+            }
+            a:link, a:visited {
+                color: blue;
+                text-decoration: none;
+                padding: 20px;
+            }
+            a:hover {
+                color: aqua;
+                text-decoration: underline;
+            }
+            #button {
+                color: pink;
+                background-color: darkred;
+                display: inline-block;
+                text-align: center;
+            }
+            table, th, td {
+                border:1px solid silver;
+            }
+            .passage {
+                padding-top: 30px;
+            }
+        </style>
+        <link rel="icon" href="images/catFav.png" type="image/x-icon" />
     </head>
     <body>
-        <h1>This is a cat Heading</h1>
-        <p>behind this paragraph are cats:</p>
-        <img 
-             src="katze.png" 
-             alt="cat1"
-        />
-        <img 
-             src="https://cdn.prod.www.spiegel.de/images/bdcce279-b331-4a76-9b95-84eb9ec95967_w948_r1.778_fpx53_fpy51.jpg" 
-             width="500px" 
-             height="400px" 
-             alt="cat2"
-        />
-        <a href="https://www.wcfcatonline.com/cat-detail/19454"> 
+        <h2> Bookmarks </h2>
+        <div>
+            <a href="#links"> jump to link section </a>
+        </div>
+        <div id="start" class="passage">
+            <h1>This is a cat Heading</h1>
+            <p>behind this paragraph are cats:</p>
             <img 
-                 src="https://www.wcfcatonline.com/storage/img/cat/1586856436AB1A6204-got.jpg" alt="best cats" 
-                 width="500px" 
-                 height="400px"
+                src="images/katze.png" 
+                alt="cat1"
+                width="200px" 
+                height="200px"
             />
-        </a>
+            <img 
+                src="https://cdn.prod.www.spiegel.de/images/bdcce279-b331-4a76-9b95-84eb9ec95967_w948_r1.778_fpx53_fpy51.jpg" 
+                width="200px" 
+                height="200px"
+                alt="cat2"
+            />
+            <a href="https://www.wcfcatonline.com/cat-detail/19454"> 
+                <img 
+                     src="https://www.wcfcatonline.com/storage/img/cat/1586856436AB1A6204-got.jpg" alt="best cats" 
+                     width="200px" 
+                     height="200px"
+                />
+            </a>            
+        </div>
+        <div id="links" class="passage">
+            <a 
+                href="https://www.google.com/search?q=cute+cats&tbm=isch&ved=2ahUKEwjEydTuiMD1AhWu57sIHb81Ck8Q2-cCegQIABAA&oq=cute+cats&gs_lcp=CgNpbWcQAzIHCAAQsQMQQzIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQyBAgAEEMyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEOggIABCABBCxAzoLCAAQgAQQsQMQgwE6BAgAEBM6CAgAEAcQHhATUNgSWJ8ZYOMaaABwAHgAgAFwiAH8A5IBAzQuMpgBAKABAaoBC2d3cy13aXotaW1nwAEB&sclient=img&ei=bzLpYYTWG67P7_UPv-uo-AQ&bih=878&biw=1913&client=firefox-b-d"
+                id="button"
+            >
+                A link to even more cute cats!
+            </a>
+        </div>
+        <div id="table" class="passage">
+            <table style="width:80%"> 
+                <tr>
+                    <th> Art</th>
+                    <th> Lifespan</th>
+                    <th> Prey</th>
+                </tr>
+                <tr>
+                    <td> Homecat</td>
+                    <td> 12-20 years</td>
+                    <td> small animals</td>
+                </tr>
+                <tr>
+                    <td> Tiger </td>
+                    <td> 25 years</td>
+                    <td> Boars, fisch and Yak</td>
+                </tr>
+            </table>
+        </div>
+        <div class="passage">
+            <a href="#start"> Back to beginning </a>
+        </div>
     </body>
 </html>
