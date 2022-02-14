@@ -1,3 +1,75 @@
-h3 {
-    color:green;
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.body {
+    width: auto;
+    position: relative;
+    flex-grow: 1;
+    align-items: stretch;
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 50px;
+    margin-top: 50px;
+}
+
+.header {
+    background-color: aqua;
+    border: solid 2px grey;
+    top: 0;
+    height: 40px;
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.footer {
+    background-color: beige;
+    bottom: 0;
+    height: 40px;
+    margin-top: -40px;
+    flex-shrink: 0;
+    margin-right: 300px;
+    display: flex;
+    justify-content: center;
+    border: solid 2px grey;
+}
+
+.content {
+    flex: 1 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar { 
+    background-color: dimgrey;
+    position: fixed;
+    top: 40px;
+    bottom: 0;
+    right: 0;
+    width: 300px;
+    border: solid 2px grey;
+    display: flex;
+    justify-content: flex-start;
+    overflow: auto;
+    max-height: 550px;
+    flex-direction: column;
+}
+
+.navbar-link {
+    padding-top: 35px; 
+    height: 40px;
+    align-self: center;
+}
+
+.footer-link {
+    align-self: center;
+    padding-left: 30px;
 }
